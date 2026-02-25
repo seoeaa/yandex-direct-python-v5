@@ -17,6 +17,33 @@ from .validators import (
     RequestValidator,
     ValidationError,
 )
+from .v4 import (
+    # V4 API
+    V4_API_URL,
+    V4Request,
+    # Selection Criteria
+    AdsSelectionCriteria,
+    AdGroupsSelectionCriteria,
+    CampaignsSelectionCriteria,
+    KeywordsSelectionCriteria,
+    # Field Classes
+    AdFields,
+    AdGroupFields,
+    CampaignFields,
+    KeywordFields,
+    # Request Builders
+    AddAdsRequest,
+    AddCampaignsRequest,
+    GetAdsRequest,
+    GetAdGroupsRequest,
+    GetCampaignsRequest,
+    GetKeywordsRequest,
+    UpdateAdsRequest,
+    AdAddItem,
+    AdUpdateItem,
+    CampaignAddItem,
+    TextAdAdd,
+)
 
 __all__ = [
     # Client
@@ -37,4 +64,29 @@ __all__ = [
     "COMMON_AD_FIELDS",
     "COMMON_CAMPAIGN_FIELDS",
     "COMMON_ADGROUP_FIELDS",
+    # V4 API
+    "V4_API_URL",
+    "V4Request",
+    # Type Definitions
+    "AdsSelectionCriteria",
+    "AdGroupsSelectionCriteria",
+    "CampaignsSelectionCriteria",
+    "KeywordsSelectionCriteria",
+    # Field Classes
+    "AdFields",
+    "AdGroupFields",
+    "CampaignFields",
+    "KeywordFields",
+    # Request Builders
+    "AddAdsRequest",
+    "AddCampaignsRequest",
+    "GetAdsRequest",
+    "GetAdGroupsRequest",
+    "GetCampaignsRequest",
+    "GetKeywordsRequest",
+    "UpdateAdsRequest",
+    "AdAddItem",
+    "AdUpdateItem",
+    "CampaignAddItem",
+    "TextAdAdd",
 ]
